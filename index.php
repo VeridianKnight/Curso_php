@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="Name change" content="width=device-width, initial-scale=1.0">
-        <title>HTML Elements Referenc</title>
+        <title>HTML Elements Reference</title>
     </head>
     <body>
         <h1>This is a heading</h1>
