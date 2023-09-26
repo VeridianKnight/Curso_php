@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+/* Aca lo lo estoy haciendo para que el encabezado no siga mientras scrolleamos*/
+.encabezado{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.encabezado img{
+    max-height: 100%;
+    height: 70px;
+}
+.links_de_navegacion{
+    max-width: 1200px;
+    margin: 0;
+    
+}
+
+.encabezado_alto li{
+    font-size: 0.7rem;
+    margin-left: 50px;
+    
+}
+.encabezado_alto li:first-child{
+    margin-right: 200px;
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.column{
+    margin-top: 10px;
+    padding: 1rem 1rem;
+    flex: 1;
+    max-width: fit-content;
+}
