@@ -5,56 +5,80 @@
     box-sizing: border-box;
 }
 
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
 li{
     text-decoration: none;
     list-style: none;
 }
 
-.contenedor{
-    width: 90%;
-    margin: auto;
-}
-/* Aca lo lo estoy haciendo para que el encabezado no siga mientras scrolleamos*/
+/*Encabezado*/
+
 .encabezado{
     position: -webkit-sticky;
     position: sticky;
     top: 0%;
     margin: 0 auto;
     display: flex;
-
 }
-
-.encabezado img{
+#home_icon{
     max-height: 100%;
     height: 70px;
 }
 .links_de_navegacion{
     max-width: 1200px;
-    margin: 0;
-    
+    width: 100%;
+    margin: 0; 
 }
-
-.encabezado_alto li{
+.encabezado_menu li{
     font-size: 0.7rem;
-    margin-left: 50px;
-    
 }
-.encabezado_alto li:first-child{
-    margin-right: 200px;
+.encabezado_menu img{
+    max-width: 100%;
+    width: 20px;
+    max-height: 100%;
+    height: 20px;
 }
-
 .row{
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     margin-bottom: 10px;
-}
-
-.column{
     margin-top: 10px;
-    padding: 1rem 1rem;
+}
+.column{
+    cursor: pointer;
+    margin-top: 5px;
     flex: 1;
     max-width: fit-content;
 }
+.column li{
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.menu_derecha{
+    padding-right: 60%;
+}
+#app_icon{
+    transform: translateX(0.4rem);
+}
+.btn_de_pedidos{
+    background-color: rgb(255, 180, 41);
+    border-radius: 7%;
+    transform: translateY(-0.3rem);
+}
+
+.btn_de_pedidos img{
+    transform: translateX(0.5rem);
+}
+
+.btn_de_pedidos li{
+    transform: translateX(-0.2rem);
+}
+
 /*CARDS*/
 .cards{ 
     display: flex;
