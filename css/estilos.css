@@ -172,3 +172,91 @@ button{
 button:hover{
     background-color: #93886b;
 }
+
+/*INICIO DEL FOOTER*/
+/*REDES SOCIALES*/
+.piedepagina3 .redes{
+    display: flex;
+    flex-direction: wrap;
+    /*border: 2px solid rgb(109, 69, 69);*/
+    width: 50vw;
+}
+.redes a{
+    padding-left: 20px;
+}
+.face,.tw,.inst,.yout{
+    color: #aaaaaa;
+}
+.face:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+   /* width: 40px;
+    height: 40px;
+    line-height: 5px;*/
+}
+.tw:hover{
+    background-color: rgb(27, 106, 163);
+    color: rgb(255, 255, 255);
+}
+.inst:hover{
+    background-color: rgb(203, 9, 125);
+    color: rgb(255, 255, 255);
+}
+.yout:hover{
+    background-color: rgb(224, 12, 12);
+    color: rgb(255, 255, 255);
+}
+.linea {
+    border: 0.2px solid rgb(31, 31, 31);
+    height: 2px; /* Grosor de la línea */
+    display: flex;
+    width: 90%;
+    margin-left: 40px;
+    align-items: center;
+}
+
+/*APPS*/
+.apps{
+    justify-content: space-evenly;
+    /*border: 2px solid rgb(24, 11, 138);*/
+    width: 15vw;
+    padding-right: 20px;
+    padding-left: 40px;
+    display: flex;
+}
+.apps img{
+    padding-left: 20px;
+}
+/*2 Y 3 FOOTER*/
+.piedepagina3{
+    margin-top: 50px;
+    margin-left: 40px;
+    text-align: center;
+    width: 90vw;
+    /*border: 2px solid rgb(109, 69, 69);*/
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.piedepagina3 .one{
+    display: flex;
+    flex-direction: wrap;
+
+    /*border: 2px solid rgb(109, 69, 69);*/
+    width: 50vw;
+}
+
+.piedepagina3 p{
+    font-family: "Speedee";
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.piedepagina3 .two{
+   /* border: 2px solid rgb(24, 11, 138);*/
+    width: 15vw;
+    padding-left: 40px;
+    display: flex;
+}
