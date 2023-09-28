@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    margin-left: 0;
     font-size: 1.2rem;
     box-sizing: border-box;
 }
 
 
-.contenedor{
-    margin: auto;
+body{
+    margin-top: 200px;
 }
 li{
     text-decoration: none;
