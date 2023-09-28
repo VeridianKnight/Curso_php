@@ -8,58 +8,93 @@
     <link href="https://db.onlinewebfonts.com/c/827d075b1538829cc0db75696e4d5fa2?family=Speedee+Bold" rel="stylesheet">
         <link rel="icon" href="./img/foodlogo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/6e316b87b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="encabezado">
-            <img src="img/mcdonalds-logo-footer-bg-white.png" alt="icono de la homepage" id="home_icon"> 
-            <div class="links_de_navegacion">
-                <div class="row encabezado_menu">
-                    <div class="column">
-                        <li>Trabaja con Nosotros</li>
-                    </div>
-                    <div class="column menu_derecha">
-                        <li>Contacto</li>
-                    </div>
-                    <div class="column menu_izquierda" id="app_icon">
-                        <img src="img/MCD_Descarga_la_app_406b004273.png" alt="Icon not found">
-                    </div>
-                    <div class="column">
-                        <li>Descarga la app</li>
-                    </div>
-                    <div class="row btn_de_pedidos">
-                        <div class="column">
-                            <img src="img/79_15_1_icone_70x70_bf9839ed7c.png" alt="Icon not found">
+    <!--Encabezado y barra de navegacion-->
+    <header class="navbar-contenedor">
+        <div class="navbar-logo">
+            <img src="img/foodlogo.ico" alt="Logo not found">
+        </div>
+        <div class="menu-movil no-funciona">
+            <img src="img/4659785-200.png" alt="Menu">
+        </div>
+        <div class="navbar-menu-contenedor">
+            <a href="#" id="trabaja-nosotros">Trabaja con Nosotros</a>
+            <a href="#" id="contacto">Contacto</a>
+            <a href="#" id="app-link"><img src="img/MCD_Descarga_la_app_406b004273.png" alt="">Descarga la app</a>
+            <button id="pedi-retira"><a href="#"><img src="img/79_15_1_icone_70x70_bf9839ed7c.png" alt="">Pedí y retirá</a></button>
+
+            <div class="navbar-escritorio">
+                <div class="productos">
+                    <button class="productos-btn">
+                        Productos
+                    </button>
+                    <div class="menu-productos">
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/Productos/Hamburguesas_img.png" alt="">Hamburguesa</a></button></div>
+                        <div class="grid-item snwch-pollo">
+                            <a href=""><img src="img/Productos/Sndwch_Pollo_img.png" alt="">Sándwiches de Pollo</a></button></div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/Productos/Papas_img.png" alt="">Papas y Complementos</a></button>
                         </div>
-                        <div class="column">
-                            <li>Pedi y retira</li>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                <div class="row menu_pop-up">
-                    <div class="column productos_link">
-                        <li class="productos_link">Productos</li> 
-                    </div>
-                    <div class="column lanzamientos_link">
-                        <li class="lanzamientos_link">Lanzamientos</li>
-                    </div>
-                    <div class="column">
-                        <li>Locales</li>
-                    </div>
-                    <div class="column">
-                        <li>En Familia</li>
-                    </div>
-                    <div class="column">
-                        <li>Nosotros</li>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/Productos/Bebidas_img.png" alt="">Bebidas</a></button></div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/Productos/Postres_img.png" alt="">Postres</a></button></div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/Productos/Encelada_img.png" alt="">Ensaladas</a></button></div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/Productos/McCafe_img.png" alt="">McCafé</a></button></div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/Productos/c_feliz_img.png" alt="">Cajita Feliz</a></button></div>
                     </div>
                 </div>
-                <div class="menu_movil">
+                <div class="lanzamientos">
+                    <button class="lanzamientos-btn">
+                        Lanzamientos
+                    </button>
+                    <div class="menu-lanzamientos">
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/Productos/NGK_Mc_Melt_03_1_7646f6e9ff.jpg" alt="">Bacon Cheddar McMelt</a></button></div>
+                    </div>
+                </div>
+                <div class="Locales">
+                    <button class="Locales-btn">
+                        Locales
+                    </button>
+                </div>
+                <div class="familia">
+                    <button class="familia-btn">
+                        En Familia
+                    </button>
+                    <div class="menu-familia">
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/En_Familia/c_feliz_img.png" alt="">Cajita Feliz</a></button></div>
+                        <div class="grid-item snwch-pollo">
+                            <a href=""><img src="img/En_Familia/Landing_Icono_3_4a26f053bd.png" alt="">Cajita Feliz Juguete</a></button></div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/En_Familia/c_feliz_img.png" alt="">Cajita Feliz Libros</a></button>
+                        </div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/En_Familia/Landing_Icono_8_bdc363d0ab.png" alt="">Con las familias</a></button></div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/En_Familia/c_feliz_img.png" alt="">Cajita Feliz Nutricionales</a></button></div>
+                        <div class="grid-item">
+                            <button><a href=""><img src="img/En_Familia/Islas_150x150_2272ce5fe3.png" alt="">McDonald's Land</a></button></div>
+                    </div>
+                </div>
+                <div class="Nosotros">
+                    <button class="Nosotros-btn">
+                        Nosotros
+                    </button>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
+       
 
     <!-- Carousel-->
 

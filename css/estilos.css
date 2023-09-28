@@ -9,46 +9,9 @@
 .contenedor{
     margin: auto;
 }
-
 li{
     text-decoration: none;
     list-style: none;
-}
-
-/*Encabezado*/
-header{
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    background: white;
-    width: 100%;
-    height: 90px;
-}
-.encabezado{
-    display: flex;
-    height: 70px;
-    width: 100%;
-}
-#home_icon{
-    max-height: 100%;
-    height: 70px;
-    transform: translateY(20px);
-}
-.links_de_navegacion{
-    top:0;
-    height: 70px;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.encabezado_menu li{
-    font-size: 0.7rem;
-}
-.encabezado_menu img{
-    max-width: 100%;
-    width: 20px;
-    max-height: 100%;
-    height: 20px;
 }
 .row{
     display: flex;
@@ -67,29 +30,247 @@ header{
     padding-left: 2px;
     padding-right: 2px;
 }
-.menu_derecha{
-    padding-right: 60%;
+/*Encabezado*/
+header{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-#app_icon{
-    transform: translateX(0.4rem);
+/* Barra de navegacion y encabezado*/
+.menu-movil{
+    display: none;
+    pointer-events: none;
+    max-height: 100%;
+    height: 20px;
 }
-.btn_de_pedidos{
-    background-color: rgb(255, 180, 41);
-    border-radius: 7%;
-    transform: translateY(-0.3rem);
-}
-
-.btn_de_pedidos img{
-    transform: translateX(0.5rem);
-}
-
-.btn_de_pedidos li{
-    transform: translateX(-0.2rem);
-}
-
-.menu_pop-up{
+.navbar-contenedor{
+    display: flex;
+    background: whitesmoke;
+    position: fixed;
+    top: 0;
     width: 100%;
-    transform: translateY(-19px);
+    height: 140px;
+    z-index: 999;
+}
+.navbar-contenedor a{
+    text-decoration: none;
+    font-family:'Yanone Kaffeesatz', sans-serif;;
+    color: black;
+    font-size: 1rem;
+}
+/* Logo de macdonalds*/
+.navbar-logo, .navbar-logo img{
+    max-height: 100%;
+    height: 73px;
+    padding-left: 85px;
+    margin-top: 13px;
+}
+.navbar-menu-contenedor{
+    margin-top: 10px;
+    padding-left: 50px;
+}
+.navbar-menu-contenedor img{
+    max-height: 100%;
+    height: 30px;
+}
+#trabaja-nosotros{
+    padding-right: 25px;
+}
+#contacto{
+    padding-right: 600px;
+}
+#app-link{
+    padding-right: 30px;
+}
+#pedi-retira{
+    border-style: none;
+    border: none;
+    background: none;
+    border-radius: 5%;
+    font-size: 1.1rem;
+    width: 150px;
+    height: 40px;
+    background: rgb(241, 222, 7);
+}
+#pedi-retira:hover{
+    background: rgb(216, 161, 9);
+}
+/* Menus dropdown de la barra de navegacion/encabezado*/
+.navbar-escritorio button{
+    border-style: none;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.navbar-escritorio{
+    display: flex;
+}
+.grid-item img{
+    max-height: 100%;
+    height: 50px;
+    margin-right: 20px;
+    transform: translateY(20px);
+}
+.grid-item a{
+    font-size: large;
+}
+.grid-item{
+    align-items: center;
+    top: calc(100% +0.5rem);
+    align-content: space-evenly;
+    padding-right: 100px;
+}
+.productos{
+    position: relative;
+}
+.menu-productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: max-content;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: calc(100%+0.25rem);
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease-in-out, transform 200ms;
+    transform: translateY(-10px);
+}
+
+.snwch-pollo{
+    transform: translateY(35px);
+}
+
+
+.productos > .productos-btn:hover +.menu-productos{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.menu-productos:hover{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.lanzamientos{
+    position: relative;
+}
+.menu-lanzamientos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: max-content;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    padding-right: 500px;
+    top: calc(100%+0.25rem);
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease-in-out, transform 200ms;
+    transform: translateY(-10px);
+}
+
+.lanzamientos > .lanzamientos-btn:hover +.menu-lanzamientos{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.lanzamientos-productos:hover{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.familia{
+    position: relative;
+}
+.menu-familia{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: max-content;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    padding-right: 500px;
+    top: calc(100%+0.25rem);
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease-in-out, transform 200ms;
+    transform: translateY(-10px);
+}
+
+.familia > .familia-btn:hover +.menu-familia{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.familia-productos:hover{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+/* media query para el encabezado*/
+@media (max-width: 1370px){
+    #contacto{
+        padding-right: 20vw;
+    }
+}
+@media (max-width: 1270px){
+    #app-link{
+        display: none;
+    }
+}
+@media (max-width: 1000px){
+    #trabaja-nosotros{
+        display: none;
+    }
+    #contacto{
+        display: none;
+    }
+    .navbar-escritorio{
+        display: none;
+    }
+    .menu-movil{
+        display: block;
+        pointer-events:all;
+    }
+    .menu-movil img{
+        height: 10vh;
+        width: 10vw;
+    }
+    #pedi-retira{
+        margin-left: 20vw;
+    }
+    .navbar-logo, .navbar-logo img{
+        padding-left: 10vw;
+    }
+}
+
+@media (max-width: 550px){
+    #pedi-retira{
+        margin-left: 10vw;
+    }
+    .navbar-logo, .navbar-logo img{
+        padding-left: 5vw;
+    }
+}
+@media (max-width: 360px){
+    #pedi-retira{
+        margin-left: 0;
+    }
+    .navbar-logo, .navbar-logo img{
+        padding-left: 1vw;
+    }
 }
 
 /* Carousel*/
