@@ -126,6 +126,12 @@ header{
 }
 
 /*CARDS*/
+.rows{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 .cards{
     z-index: 888;
     display: flex;
@@ -138,7 +144,7 @@ header{
 
 .card{ 
     
-    border: 2px black;
+    /*border: 2px black;*/
     text-align: center;
     margin: 10px;
     max-width: 500px;
@@ -183,29 +189,48 @@ button:hover{
 }
 .redes a{
     padding-left: 20px;
+    text-align: center;
+    
 }
-.face,.tw,.inst,.yout{
+.face,.tw,.inst,.yout {
     color: #aaaaaa;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #aaaaaa;
+    text-align: center;
 }
 .face:hover{
     background-color: blue;
     color: white;
     border-radius: 50%;
-   /* width: 40px;
-    height: 40px;
-    line-height: 5px;*/
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 .tw:hover{
     background-color: rgb(27, 106, 163);
     color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 .inst:hover{
     background-color: rgb(203, 9, 125);
     color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 .yout:hover{
     background-color: rgb(224, 12, 12);
     color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 .linea {
     border: 0.2px solid rgb(31, 31, 31);
@@ -243,7 +268,6 @@ button:hover{
 .piedepagina3 .one{
     display: flex;
     flex-direction: wrap;
-
     /*border: 2px solid rgb(109, 69, 69);*/
     width: 50vw;
 }
@@ -255,8 +279,86 @@ button:hover{
 }
 
 .piedepagina3 .two{
-   /* border: 2px solid rgb(24, 11, 138);*/
+    /*border: 2px solid rgb(24, 11, 138);*/
     width: 15vw;
     padding-left: 40px;
     display: flex;
+}
+
+@media (max-width: 770px)  {
+/*CARDS*/
+    .cards{
+        display: flex;
+        flex-wrap:nowrap;
+        flex-direction:column;
+        margin: 10px;
+    }
+  
+    .rows{
+        display: flex;
+        flex-direction: column;
+        /*border: 2px solid rgb(28, 110, 28);*/
+        align-items: center;
+    }
+
+    .card{
+        max-width: 100%;
+    }
+    
+    .card h2{
+        font-family: "Speedee";
+        font-size: 24px;
+    }
+    .card p{
+        font-family: "Speedee";
+        font-size: 16px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+    button:hover{
+        background-color: #ffbc0d;
+    }
+    /*FOOTER*/
+    .piedepagina3{
+        /*border: 2px solid blue;*/
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90vw;
+    }
+    .piedepagina3 .one{
+        flex-wrap: wrap;
+        width: 50vw;
+        height: 10vh;
+        justify-content: space-between;
+        
+    }
+    .piedepagina3 .redes{
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .piedepagina3 .apps{
+        justify-content: space-between;
+        width: 70vw;
+    }
+
+    .piedepagina3 .two{
+        margin-top: 20px;
+        width: 30vw;
+       /* border: 2px solid red;*/
+        align-items: center;
+    }
+    .two img {
+        width: 20px;
+        height: 20px;
+    }
+
 }
